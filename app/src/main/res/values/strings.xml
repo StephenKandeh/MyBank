@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBank</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">Please enter amount</string>
+    <string name="WD">Withdraw</string>
+    <string name="D">Deposit</string>
+    <string name="DE">Your Balance:</string>
+</resources>
