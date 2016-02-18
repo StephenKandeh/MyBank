@@ -4,60 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:orientation="vertical"
-    android:background="@color/LightBlue"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.stephen.mybank.MainActivity"
     tools:showIn="@layout/activity_main">
 
 
-
-        <EditText
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:hint="@string/hint"
-            android:textColorHint="@color/DarkerYellow"
-            />
-
-
+    <EditText
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:textColorHint="@color/DarkerYellow" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
         <Button
+            android:id="@+id/w"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="50"
-            android:text="@string/WD"
             android:background="@color/LightYellow"
-            />
-
-
+            android:text="@string/WD" />
         <Button
+            android:id="@+id/d"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="50"
-            android:text="@string/D"
             android:background="@color/LightYellow"
-
+            android:text="@string/D"
             />
-
-
-
     </LinearLayout>
-
     <TextView
+        android:id="@+id/mib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text = "@string/DE"
-        android:textSize="24dp"
         android:layout_gravity="center"
+        android:text="@string/DE"
         android:textColor="@color/DarkerYellow"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text = "$0"
+        android:textSize="25dp"
+        android:gravity = "center"
+
+
+
+
         />
+
+
 
 </LinearLayout>
